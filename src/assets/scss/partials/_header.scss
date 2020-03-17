@@ -1,0 +1,178 @@
+header.header {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  position: absolute;
+  z-index: 5;
+  background-color: transparent;
+  top: 0;
+  @media #{$breakpoint-md} {
+    top: 0;
+    bottom: auto;
+  }
+  .wrap-header {
+    width: 100%;
+    max-width: 144rem;
+    position: relative;
+    display: flex;
+    align-items: flex-start;
+    padding: 2rem 2rem 8rem 2rem;
+    transition: all 0.6s ease-in-out;
+    flex-direction: column;
+    //border: 1px solid red;
+    @media #{$breakpoint-sm} {
+      padding: 2.7rem 3.8rem 8rem 3.8rem;
+    }
+    @media #{$breakpoint-md} {
+      flex-direction: inherit;
+      justify-content: space-between;
+      padding: 1.7rem 4.4rem 10.3rem 4.4rem;
+    }
+  }
+  h4 {
+    color: $white;
+    white-space: nowrap;
+    &.first {
+      font-size: 1.3rem;
+      @media #{$breakpoint-sm} {
+        font-size: 1.3rem;
+      }
+      @media #{$breakpoint-md} {
+        font-size: 0.9rem;
+      }
+    }
+    &.second {
+      font-size: 0.9rem;
+      @media #{$breakpoint-sm} {
+        font-size: 0.9rem;
+      }
+      @media #{$breakpoint-md} {
+        font-size: 0.9rem;
+      }
+    }
+  }
+  h1 {
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    left: 0;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    @include center-x;
+    top: auto;
+    bottom: 0;
+
+    @media #{$breakpoint-sm} {
+      top: auto;
+      bottom: 0;
+    }
+    @media #{$breakpoint-md} {
+      top: 2rem;
+      bottom: auto;
+    }
+
+    a {
+      position: relative;
+      padding: 1.5rem 0 1.5rem 0rem;
+      background-size: 100%;
+      background-repeat: no-repeat;
+      display: block;
+      text-indent: -999em;
+      z-index: 4;
+      margin: 1rem 0;
+      &.logo {
+        background-image: url('../img/logo/aws_is_how.svg');
+        background-size: contain;
+        background-position: center;
+        width: 170px;
+        height: 46px;
+        margin: 0;
+        padding: 0;
+        @media #{$breakpoint-md} {
+          width: 83px;
+          height: 28px;
+        }
+      }
+    }
+  }
+  .contact {
+    color: $white;
+    text-decoration: none;
+    transition: $hover;
+    padding: 0;
+    font-size: 2rem;
+  }
+}
+
+#section01,
+#section02,
+#section03,
+#section04,
+#section05,
+#section07 {
+  header.header .wrap-header {
+    align-items: flex-start;
+  }
+  header.header h1 a.logo {
+    background-image: url('../img/logo/logo-desktop-white.svg');
+  }
+}
+#section07 {
+  header.header {
+    opacity:0;
+  }
+}
+
+#section06  {
+  header.header .wrap-header {
+    h4 {
+      color: #23293a;
+    }
+  }
+  header.header h1 a.logo {
+    background-image: url('../img/logo/logo-desktop-dark.svg');
+  }
+}
+
+footer {
+  .container .wrapper {
+    padding: 0rem 2rem 0rem 2rem;
+    @media #{$breakpoint-md} {
+      padding: 0.4rem 8.8rem 0.6rem 8.8rem;
+    }
+  }
+  h1 {
+    margin: 0;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: flex-end;
+    padding: 0.5rem 0 0.5rem 0rem;
+    @media #{$breakpoint-md} {
+      padding: 1.5rem 0 1.5rem 0rem;
+    }
+
+    a {
+      position: relative;
+      padding: 1.5rem 0 1.5rem 0rem;
+      background-size: 100%;
+      background-repeat: no-repeat;
+      display: block;
+      text-indent: -999em;
+      z-index: 4;
+      &.logo-footer {
+        background-image: url('../img/logo/sap-best-r.svg');
+        background-size: contain;
+        background-position: center right;
+        width: 173px;
+        height: 25px;
+        @media #{$breakpoint-md} {
+          width: 193px;
+          height: 35px;
+        }
+      }
+    }
+  }
+}

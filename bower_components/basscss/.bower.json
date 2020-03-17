@@ -1,0 +1,15 @@
+{
+  "name": "basscss",
+  "homepage": "https://github.com/jxnblk/basscss",
+  "version": "8.1.0",
+  "_release": "8.1.0",
+  "_resolution": {
+    "type": "version",
+    "tag": "v8.1.0",
+    "commit": "b641c2390c0bd3ea627c8c386b8f0d5e60c5ab28"
+  },
+  "_source": "https://github.com/jxnblk/basscss.git",
+  "_target": "^8.1.0",
+  "_originalSource": "basscss",
+  "_direct": true
+}

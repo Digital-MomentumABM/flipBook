@@ -1,0 +1,465 @@
+.main-container {
+  position: relative;
+}
+.section {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100%;
+  position: relative;
+  width: 100%;
+  @media #{$breakpoint-md} {
+    height: 100vh;
+  }
+}
+#intro01 {
+  position: relative;
+  width: 100%;
+  background: $white;
+  height: 100vh;
+  @media #{$breakpoint-md} {
+    height: 100%;
+  }
+  .container .wrapper {
+    padding: 6rem 2rem 6rem 2rem;
+    @media #{$breakpoint-md} {
+      padding: 6rem 11.6rem 6rem 11.6rem;
+    }
+  }
+  .intro {
+    top: 0;
+    background-color: $versioning;
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    z-index: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: background 0.8s ease;
+    .animatedh2 {
+      transform: translateY(-20px) scale(0.9);
+      transform-origin: center;
+      opacity: 0;
+      visibility: hidden;
+      text-align: center;
+      color: $white;
+      font-size: 2.6rem;
+    }
+    &.end {
+      background-color: rgba($versioning, 0);
+    }
+  }
+  .content {
+    height: 100%;
+    @media #{$breakpoint-md} {
+      height: 100%;
+    }
+    .copy {
+      display: flex;
+      align-items: center;
+      @media #{$breakpoint-sm} {
+        align-items: flex-start;
+      }
+      @media #{$breakpoint-md} {
+        align-items: flex-start;
+      }
+    }
+
+    .text {
+      opacity: 0;
+      visibility: hidden;
+      display: block;
+    }
+    .button-area {
+      position: relative;
+      opacity: 0;
+      visibility: hidden;
+      a {
+        height: 164px;
+        width: 164px;
+        display: block;
+      }
+    }
+  }
+}
+#intro01 {
+  position: relative;
+  width: 100%;
+  background: $white;
+  height: 100vh;
+  @media #{$breakpoint-md} {
+    height: 100%;
+  }
+  h2 {
+    margin-bottom: 0;
+  }
+
+  .text {
+    text-align: center;
+  }
+  .container {
+    position: relative;
+    height: 100%;
+    .copy {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      @media #{$breakpoint-md} {
+        justify-content: center;
+      }
+    }
+  }
+  header.header {
+    position: absolute;
+    bottom: 0;
+    top: auto;
+    opacity: 0;
+    visibility: hidden;
+    h1 {
+      top: -4rem;
+      @media #{$breakpoint-md} {
+        top: -2rem;
+      }
+      a.logo {
+        width: 140px;
+        height: 37px;
+      }
+    }
+  }
+}
+#section01 {
+  background-color: $blue;
+  * {
+    color: $white;
+  }
+  .case-study-btn {
+    margin: auto;
+    width: 100%;
+    display: flex;
+    padding: 5rem 0;
+    justify-content: center;
+    @media #{$breakpoint-md} {
+      width:auto;
+      display: block;
+      position: absolute;
+      top: -190px;
+    }
+  }
+}
+#section02 {
+  .bcg {
+    background-image: url(../img/src/bcgsection02.jpg);
+    background-position: 76% 0px;
+    @media #{$breakpoint-sm} {
+      background-position: 76% 0px;
+    }
+    @media #{$breakpoint-md} {
+      background-position: center left;
+    }
+  }
+  background-color: $blue;
+  * {
+    color: $white;
+  }
+  .case-study-btn {
+    margin: auto;
+    width: 100%;
+    display: flex;
+    padding: 5rem 0;
+    justify-content: center;
+    @media #{$breakpoint-md} {
+      width:auto;
+      display: block;
+      position: absolute;
+      top: 0px;
+      right: 0;
+    }
+  }
+}
+#section03 {
+  .bcg {
+    background-position: left;
+    animation-delay: 0.6s;
+    background-image: url(../img/src/bcgsection03.jpg);
+  }
+  background-color: $blue;
+  * {
+    color: $white;
+  }
+  .case-study-btn {
+    margin: auto;
+    width: 100%;
+    display: flex;
+    padding: 5rem 0;
+    justify-content: center;
+    @media #{$breakpoint-md} {
+      width:auto;
+      display: block;
+      position: absolute;
+      top: -190px;
+      @include center-x;
+    }
+  }
+}
+#section04 {
+  .bcg {
+    background-position: left;
+    animation-delay: 0.6s;
+    background-image: url(../img/src/bcgsection04.jpg);
+  }
+  background-color: $blue;
+  * {
+    color: $white;
+  }
+  .case-study-btn {
+    margin: auto;
+    width: 100%;
+    display: flex;
+    padding: 5rem 0;
+    justify-content: center;
+    @media #{$breakpoint-md} {
+      width:auto;
+      display: block;
+      position: absolute;
+      top: 0%;
+      right: 0;
+    }
+  }
+}
+#section05 {
+  background-color: $blue;
+  * {
+    color: $white;
+  }
+}
+#section06 {
+  background-color: $white;
+
+  p {
+    font-size: 1.5rem;
+  }
+  .timeline-nav {
+    width: 100%;
+  }
+  .timeline-menu {
+    max-width: 1019px;
+    width: 100%;
+    display: flex;
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+    position: relative;
+    flex-wrap: wrap;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    padding: 4rem 0 0 0;
+    @media #{$breakpoint-sm} {
+      flex-direction: inherit;
+      padding: 4rem 0;
+      justify-content: space-around;
+    }
+    @media #{$breakpoint-md} {
+      padding: 0;
+      flex-wrap: inherit;
+      align-items: flex-start;
+      justify-content: space-between;
+    }
+    &:before {
+      width: 100%;
+      position: absolute;
+      @include center-xy;
+      content: '';
+      height: 11px;
+      border-radius: 9.5px;
+      border: solid 1px $versioning;
+      display: none;
+      @media #{$breakpoint-md} {
+        display: block;
+      }
+    }
+    li {
+      position: relative;
+      padding: 0rem;
+      cursor: pointer;
+      margin-bottom: 6rem;
+      @media #{$breakpoint-sm} {
+        margin: 0;
+      }
+      @media #{$breakpoint-md} {
+      }
+      &:nth-child(5) {
+        &:before {
+          display: none;
+        }
+      }
+      i {
+        position: absolute;
+        top: 0;
+        background-repeat: no-repeat;
+        background-size: cover;
+        @include center-x;
+        transition: all 0.6s ease-in-out;
+        @media #{$breakpoint-md} {
+          opacity: 0.2;
+        }
+      }
+      &:before {
+        @include center-x;
+        position: absolute;
+        content: '';
+        top: auto;
+        bottom: -3.8rem;
+        width: 1px;
+        height: 60px;
+        background: $blue;
+        display: block;
+
+        @media #{$breakpoint-sm} {
+          display: none;
+        }
+        @media #{$breakpoint-md} {
+          display: none;
+        }
+      }
+
+      &:hover,
+      &.active {
+        a,
+        i {
+          opacity: 1;
+        }
+      }
+      &.active {
+        a,
+        i {
+          opacity: 1;
+        }
+      }
+      a {
+        font-size: 1.5rem;
+        text-align: center;
+        position: relative;
+        display: flex;
+        padding: 9.5rem 0rem 4rem 0rem;
+        text-decoration: none;
+        color: $blue;
+        transition: all 0.6s ease-in-out;
+
+        @media #{$breakpoint-sm} {
+          padding: 9.5rem 0rem 2rem 0rem;
+        }
+        @media #{$breakpoint-md} {
+          padding: 11rem 0rem 0px 0rem;
+          opacity: 0.2;
+        }
+      }
+
+      .customer {
+        width: 73px;
+        height: 73px;
+        background-image: url(../img/src/customer-on.svg);
+        @media #{$breakpoint-sm} {
+          width: 73px;
+          height: 73px;
+        }
+        @media #{$breakpoint-md} {
+          width: 51px;
+          height: 51px;
+        }
+      }
+      .problem {
+        width: 102px;
+        height: 73px;
+        background-image: url(../img/src/problem-on.svg);
+        @media #{$breakpoint-sm} {
+          width: 102px;
+          height: 73px;
+        }
+        @media #{$breakpoint-md} {
+          width: 85px;
+          height: 59px;
+        }
+      }
+      .important {
+        width: 65px;
+        height: 75px;
+        background-image: url(../img/src/most-important-on.svg);
+        @media #{$breakpoint-sm} {
+          width: 65px;
+          height: 75px;
+        }
+        @media #{$breakpoint-md} {
+          width: 53px;
+          height: 61px;
+        }
+      }
+      .know {
+        width: 40px;
+        height: 73px;
+        background-image: url(../img/src/how-do-you-know-on.svg);
+        @media #{$breakpoint-sm} {
+          width: 40px;
+          height: 73px;
+        }
+        @media #{$breakpoint-md} {
+          width: 28px;
+          height: 51px;
+        }
+      }
+      .experience {
+        width: 48px;
+        height: 69px;
+        background-image: url(../img/src/experience-look-on.svg);
+        @media #{$breakpoint-sm} {
+          width: 48px;
+          height: 69px;
+        }
+        @media #{$breakpoint-md} {
+          width: 48px;
+          height: 69px;
+        }
+      }
+    }
+
+    .magic-line {
+      background: $blue;
+      position: absolute;
+      width: 154px;
+      height: 12px;
+      border-radius: 9.5px;
+      top: 7.9rem;
+      left: 0;
+      display: none;
+      @media #{$breakpoint-md} {
+        display: block;
+      }
+    }
+
+    .magic-line.hover {
+      background: $blue;
+      transition: background 400ms ease-in-out;
+    }
+  }
+}
+#section07 {
+  background-color: $versioning;
+  .wrapper {
+    padding: 6rem 4.4rem 6rem 4.4rem;
+  }
+  h2 {
+    margin-bottom: 0;
+  }
+  * {
+    color: $white;
+  }
+  .contact-details {
+    position: absolute;
+    bottom: 0;
+    @include center-x;
+    display: flex;
+    justify-content: center;
+  }
+}

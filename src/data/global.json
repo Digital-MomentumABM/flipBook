@@ -1,0 +1,41 @@
+{
+	"title": "AWS – Flip book",
+	"introNavItems": [{
+		"nav": [{
+				"title": "landing",
+				"id": "anchor1",
+				"href": "#section02"
+			},
+			{
+				"title": "INTELLIGENT CONNECTIVITY",
+				"id": "anchor2",
+				"href": "#section03"
+			},
+			{
+				"title": "PUTTING THE CUSTOMER FIRST",
+				"id": "anchor3",
+				"href": "#section04"
+			},
+			{
+				"title": "PUTTING THE CUSTOMER FIRST",
+				"id": "anchor4",
+				"href": "#section05"
+			},
+			{
+				"title": "OPERATIONAL EXCELLENCE",
+				"id": "anchor5",
+				"href": "#section06"
+			},
+			{
+				"title": "OPERATIONAL EXCELLENCE",
+				"id": "anchor6",
+				"href": "#section07"
+			},
+			{
+				"title": "contact",
+				"id": "anchor7",
+				"href": "#section08"
+			}
+		]
+	}]
+}

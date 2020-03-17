@@ -1,0 +1,62 @@
+@font-face {
+	font-family: "icons";
+	src: url('../fonts/icons.eot');
+	src: url('../fonts/icons.eot?#iefix') format('eot'),
+		url('../fonts/icons.woff') format('woff'),
+		url('../fonts/icons.ttf') format('truetype'),
+		url('../fonts/icons.svg#icons') format('svg');
+}
+
+@mixin webfont-styles {
+	display: inline-block;
+	height: inherit;
+	margin:0 0.2rem;
+	font-size: 100%;
+	font-family: "icons";
+	font-variant: normal;
+	font-style: normal;
+	font-weight: normal;
+	line-height: 1;
+	text-decoration: inherit;
+	text-align: center;
+	text-transform: none;
+	speak: none;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+[class^="webfont-"],
+[class*=" webfont-"],
+.webfont {
+	display: inline-block;
+
+	&:before {
+		@include webfont-styles;
+	}
+}
+
+@function webfont-char($filename) {
+	$char: "";
+
+	@if $filename == "arrow-down" {
+		$char: "\E001";
+	}
+	@if $filename == "scroll" {
+		$char: "\E002";
+	}
+
+	@return $char;
+}
+
+@mixin webfont($filename, $insert: before) {
+	&:#{$insert} {
+		content: webfont-char($filename);
+	}
+}
+
+.webfont-arrow-down {
+	@include webfont("arrow-down");
+}
+.webfont-scroll {
+	@include webfont("scroll");
+}

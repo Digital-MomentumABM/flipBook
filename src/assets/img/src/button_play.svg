@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="115px" height="115px" viewBox="0 0 115 115" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 61.2 (89653) - https://sketch.com -->
+    <title>Group</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Play-BTN">
+            <g id="Group">
+                <g id="Play-BTN">
+                    <g id="Case-Study-BTN">
+                        <path d="M57.0544,102.4478 C31.9852,102.4478 11.6623,82.1249 11.6623,57.0557 C11.6623,31.9852 31.9852,11.6623 57.0544,11.6623 C82.1236,11.6623 102.4465,31.9852 102.4465,57.0557 C102.4465,82.1249 82.1236,102.4478 57.0544,102.4478 M57.0544,0 C25.545,0 0,25.545 0,57.0557 C0,88.5651 25.545,114.1101 57.0544,114.1101 C88.5651,114.1101 114.1088,88.5651 114.1088,57.0557 C114.1088,25.545 88.5651,0 57.0544,0" id="Fill-31" fill-opacity="0.3" fill="#F59D0F"></path>
+                        <path d="M57.0544,11.66295 C31.9852,11.66295 11.6623,31.98585 11.6623,57.05505 C11.6623,82.12555 31.9852,102.44845 57.0544,102.44845 C82.1236,102.44845 102.4465,82.12555 102.4465,57.05505 C102.4465,31.98585 82.1236,11.66295 57.0544,11.66295" id="Fill-33" fill-opacity="0.69" fill="#F59D0F"></path>
+                        <path d="M87.7019,57.05544 C87.7019,40.12944 73.9804,26.40924 57.0544,26.40924 C40.1284,26.40924 26.4082,40.12944 26.4082,57.05544 C26.4082,73.98144 40.1284,87.70164 57.0544,87.70164 C73.9804,87.70164 87.7019,73.98144 87.7019,57.05544" id="Fill-35" fill="#F59D0F"></path>
+                        <text id="-" font-family="AmazonEmber-Medium, Amazon Ember" font-size="9.1" font-weight="400"></text>
+                    </g>
+                </g>
+                <polygon id="Triangle" fill="#FFFFFF" transform="translate(60.500000, 57.500000) rotate(-270.000000) translate(-60.500000, -57.500000) " points="60.5 46 74 69 47 69"></polygon>
+            </g>
+        </g>
+    </g>
+</svg>

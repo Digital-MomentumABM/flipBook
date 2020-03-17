@@ -1,0 +1,114 @@
+.buttons {
+  position: relative;
+  padding: 2rem 0rem 2rem 0rem;
+  .btn {
+    padding: 1rem 4rem 1rem 4rem;
+    font-size: 1.4rem;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: normal;
+    text-align: center;
+    border-radius: 16rem;
+
+    strong {
+      font-weight: bold;
+      display: block;
+    }
+    &.primary {
+      font-family: $font-family-regular;
+      color: $white;
+      text-decoration: none;
+      text-transform: uppercase;
+      text-align: center;
+      position: relative;
+      cursor: pointer;
+      margin: 1rem;
+      padding: 1.3rem 2rem 1rem 2rem;
+      display: block;
+      border-radius: 29px;
+      border: 1px solid rgba($versioning, 1);
+      background: rgba($versioning, 1);
+      transition: $hover;
+      &:after {
+        content: '';
+        border-radius: 29px;
+        border: 1px solid rgba($medgrey, 0);
+        position: absolute;
+        @include center-xy;
+        width: calc(100% + 1.3rem);
+        height: calc(100% + 1.3rem);
+        transition: $hover;
+      }
+      &.arrow-right {
+        &:before {
+          position: absolute;
+          content: '';
+          color: $white;
+          background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='54' height='28' viewBox='0 0 54 28'%3E%3Cpath fill='%23FFF' fill-rule='nonzero' d='M27.623 27.723L53.61 1.645a.969.969 0 0 0 0-1.363.974.974 0 0 0-1.354 0L26.944 25.681 1.637.282A.964.964 0 0 0 .957 0 .964.964 0 0 0 .28.282.97.97 0 0 0 .28 1.645L26.265 27.72a.98.98 0 0 0 1.358.002z'/%3E%3C/svg%3E%0A");
+          background-repeat: no-repeat;
+          background-position: bottom center;
+          right: 12px;
+          top: 12px;
+          width: 26px;
+          height: 15px;
+          object-fit: contain;
+          transform: rotate(-90deg);
+        }
+      }
+      &:hover {
+        &:after {
+          border: 1px solid rgba($medgrey, 1);
+        }
+      }
+    }
+  }
+}
+.button-area {
+  position: relative;
+}
+ 
+svg.pulse-svg {
+  overflow: visible;
+  position: relative;
+  .circle{
+    position: relative;
+  }
+  .first-circle {
+    fill: $versioning;
+    transform: scale(0.5);
+    transform-origin: center center;
+    animation: pulse-me 3s linear infinite;
+  }
+  .second-circle {
+    @extend .first-circle;
+    animation-delay: 1s;
+  }
+  .third-circle {
+    @extend .first-circle;
+    animation-delay: 2s;
+  }
+  text { 
+    position: absolute;
+    z-index: 2;  
+    font-size: 0.9rem;
+    fill: $white;
+    font-family: $font-family-medium;
+  }
+}
+
+@keyframes pulse-me {
+  0% {
+    transform: scale(0.5);
+    opacity: 0;
+  }
+  50% {
+    opacity: 0.8;
+  }
+  70% {
+    opacity: 0.09;
+  }
+  100% {
+    transform: scale(3);
+    opacity: 0;
+  }
+}

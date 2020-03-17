@@ -1,0 +1,189 @@
+@font-face {
+  font-family: 'amazon_emberregular';
+  src: url('../fonts/../fonts/amazon_ember_rg-webfont.woff2') format('woff2'),
+    url('../fonts/../fonts/amazon_ember_rg-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'amazon_embermedium';
+  src: url('../fonts/amazon-ember-medium-webfont.woff2') format('woff2'), url('../fonts/amazon-ember-medium-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'amazon_embermedium_italic';
+  src: url('../fonts/amazon-ember-mediumitalic-webfont.woff2') format('woff2'),
+    url('../fonts/amazon-ember-mediumitalic-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'amazon_emberbold';
+  src: url('../fonts/amazonember_bd-webfont.woff2') format('woff2'), url('../fonts/amazonember_bd-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'amazon_emberbold_italic';
+  src: url('../fonts/amazonember_bdit-webfont.woff2') format('woff2'), url('../fonts/amazonember_bdit-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'amazon_emberheavy';
+  src: url('../fonts/amazonember_he-webfont.woff2') format('woff2'), url('../fonts/amazonember_he-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'amazon_emberheavy_italic';
+  src: url('../fonts/amazonember_heit-webfont.woff2') format('woff2'), url('../fonts/amazonember_heit-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'amazon_emberlight';
+  src: url('../fonts/amazonember_lt-webfont.woff2') format('woff2'), url('../fonts/amazonember_lt-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'amazon_emberlight_italic';
+  src: url('../fonts/amazonember_ltit-webfont.woff2') format('woff2'), url('../fonts/amazonember_ltit-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'amazon_emberitalic';
+  src: url('../fonts/amazonember_rgit-webfont.woff2') format('woff2'), url('../fonts/amazonember_rgit-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'amazon_emberthin';
+  src: url('../fonts/amazonember_th-webfont.woff2') format('woff2'), url('../fonts/amazonember_th-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+$font-family-regular: 'amazon_emberregular';
+$font-family-bold: 'amazon_emberbold';
+$font-family-light: 'amazon_emberlight';
+$font-family-lightItalic: 'amazon_emberlight_italic';
+$font-family-medium: 'amazon_embermedium';
+$font-family-heavy: 'amazon_emberheavy';
+$font-family-thin: 'amazon_emberthin';
+
+html {
+  font-size: calc(1em * 0.625);
+  font-family: $font-family-regular;
+}
+
+body {
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  font-family: $font-family-regular, Helvetica, Helvetica Neue, Arial, sans-serif;
+  color: $blue;
+  font-size: 1.2rem;
+  background: $white;
+}
+html,
+body {
+  height: 100%;
+}
+
+.red {
+  color: $red;
+}
+.orange {
+  color: $orange;
+}
+a {
+  color: $white;
+}
+.bold,
+.strong,
+strong {
+  font-family: $font-family-bold;
+}
+p {
+  font-size: 1.2rem;
+  margin: 0;
+  padding: 0 0 1.6rem 0;
+  font-family: $font-family-regular;
+  font-weight: 300;
+  line-height: 1.33;
+  @media #{$breakpoint-md} {
+    font-size: 1.2rem;
+  }
+  &.aws {
+    font-size: 1.5rem;
+  }
+}
+
+h1 {
+  margin-top: 0;
+  line-height: 1;
+  font-size: 3.4rem;
+  font-weight: 300;
+  line-height: 1.18;
+  font-family: $font-family-light;
+  letter-spacing: 1.8px;
+  @media #{$breakpoint-md} {
+    line-height: 55px;
+    font-size: 4.6rem;
+  }
+}
+
+h2 {
+  font-size: 2.2rem;
+  margin: 0;
+  font-family: $font-family-medium;
+  line-height: 1.4;
+  margin-bottom: 2.4rem;
+  font-weight: 300;
+  letter-spacing: -0.36px;
+  @media #{$breakpoint-md} {
+    letter-spacing: 0;
+    font-size: 2.4rem;
+    line-height: normal;
+    margin-bottom: 0rem;
+    letter-spacing: -1.42px;
+  }
+  em {
+    color: $versioning;
+    font-style: normal;
+  }
+}
+
+h3 {
+  font-size: 2.2rem;
+  margin: 0 0 1.6rem 0;
+  font-family: $font-family-regular;
+  line-height: 2.6rem;
+  font-weight: 300;
+  @media #{$breakpoint-md} {
+    margin: 0 0 2.2rem 0;
+    font-size: 2.2rem;
+    line-height: 2.6rem;
+  }
+}
+
+h4 {
+  font-size: 1.6rem;
+  margin: 0;
+  font-family: $font-family-medium;
+  line-height: 20px;
+  letter-spacing: -0.87px;
+  font-weight: normal;
+  @media #{$breakpoint-sm} {
+    font-size: 1.6rem;
+    letter-spacing: -0.87px;
+  }
+  @media #{$breakpoint-md} {
+    line-height: 28px;
+    font-size: 1.6rem;
+    letter-spacing: 1.2px;
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "name": "gsap",
+  "homepage": "https://github.com/greensock/GreenSock-JS",
+  "version": "3.0.5",
+  "_release": "3.0.5",
+  "_resolution": {
+    "type": "version",
+    "tag": "3.0.5",
+    "commit": "3cdfa2732e3897a4bce8ddea9a99e7e7b819124c"
+  },
+  "_source": "https://github.com/greensock/GreenSock-JS.git",
+  "_target": "^3.0.1",
+  "_originalSource": "gsap"
+}
